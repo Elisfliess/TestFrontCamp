@@ -36,6 +36,15 @@ body {
     width: 31rem;
 }
 
+
+.imgplanos{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+
 .form {
     width: 50%;
     display: flex;
@@ -47,8 +56,8 @@ body {
 }
 
 .form-header {
-    margin-bottom: 3rem;
-    display: flex;
+    margin-bottom: 1rem;
+    display:flex;
     justify-content: space-between;
 }
 
@@ -127,25 +136,34 @@ body {
     color: #000000be;
 }
 
-.gender-group {
+.plans-group {
+
     display: flex;
     justify-content: space-between;
-    margin-top: 0.62rem;
     padding: 0 .5rem;
+    flex-direction: column;
+    z-index: 5;
+    height: 20rem;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    
 }
 
-.gender-input {
-    display: flex;
-    align-items: center;
+.plans-input {
+    display:list-item;
+    align-items:center;
+    flex-direction:column;
+        
 }
 
-.gender-input input {
+.plans-input input {
     margin-right: 0.35rem;
+    
 }
 
-.gender-input label {
+.plans-input label {
     font-size: 0.81rem;
-    font-weight: 600;
+    font-weight: 800;
     color: #000000c0;
 }
 
@@ -195,16 +213,16 @@ body {
         overflow-y: scroll;
         flex-wrap: nowrap;
     }
-    .gender-inputs {
+    .plans-inputs {
         margin-top: 2rem;
     }
-    .gender-group {
+    .plans-group {
         flex-direction: column;
     }
-    .gender-title h6 {
+    .plans-title h6 {
         margin: 0;
     }
-    .gender-input {
+    .plans-input {
         margin-top: 0.5rem;
     }
 }
